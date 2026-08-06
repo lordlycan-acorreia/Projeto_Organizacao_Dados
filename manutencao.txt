@@ -1,0 +1,36 @@
+1. Através de Queries SQL (Vistas do Sistema):
+• O PostgreSQL guarda o registo de erros recentes nas estatísticas internas (se
+configurado) ou pode monitorizar os estados de erro atípicos através das
+conexões ativas. No entanto, para erros críticos de arranque ou falhas de
+autenticação de rede, o painel de Logs do Neon na consola web é sempre o
+ponto de contacto principal, uma vez que o acesso ao terminal do servidor
+físico é gerido inteiramente pela plataforma.
+• Ver queries ativas ou bloqueadas em tempo real (O equivalente ao
+"pulso" do servidor):
+SELECT pid, usename, client_addr, state, query,
+now() - query_start AS duracao
+FROM pg_stat_activity
+WHERE state != 'idle'
+ORDER BY duracao DESC;
+
+• 2. Verificar estatísticas de uso e erros de tabelas/conexões:
+SELECT datname, numbackends AS sessoes_ativas,
+
+xact_commit AS transacoes_sucesso,
+xact_rollback AS transacoes_falhadas
+FROM pg_stat_database
+WHERE datname = current_database();
+
+• (Se o campo transacoes_falhadas estiver a subir muito rapidamente, indica
+que existem aplicações a enviar transações com erros ou falhas de
+integridade).
+Passo 4: O "Plano de Manutenção" (Vacuuming)
+Este é o segredo que separa os amadores dos profissionais. Sempre que apagam
+ou alteram dados, o PostgreSQL deixa "buracos" (lixo) no ficheiro físico. Com o
+tempo, a base de dados incha e fica lenta.
+• A solução: O VACUUM.
+• Ação:
+VACUUM ANALYZE;
+Explicação literal: "Por favor, passa a lixa no armazém e limpa o pó dos buracos
+que ficaram das vendas apagadas". É como fazer uma desfragmentação de disco,
+mas para bases de dados.
