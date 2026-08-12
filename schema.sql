@@ -51,3 +51,5 @@ INSERT INTO Vendas (utilizador_id, produto_id, quantidade) VALUES
 
 -- ============================================================
 SELECT * FROM Vendas;
+
+-- Plano de Recuperação de Desastre
