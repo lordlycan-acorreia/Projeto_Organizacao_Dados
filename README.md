@@ -10,3 +10,8 @@ Para iniciar a base de dados, executar os comandos de `CREATE TABLE` presentes n
 
 ## Avisos
 Não existem passwords gravadas neste repositório. Em caso de falha de dados, utilizar os scripts de recuperação.
+
+## Plano de Resiliência e Disaster Recovery (Regra 3-2-1)
+Para garantir a salvaguarda dos dados, foi implementado um mecanismo de recuperação:
+- O ficheiro `recuperar_tudo.sh` contém os comandos de `pg_dump` para exportar a base de dados e o comando `psql` para injetar o backup de volta.
+- Sendo a base de dados alojada na Cloud (NeonDB), cumprimos o requisito de ter a cópia fora do local físico para prevenir desastres locais.
