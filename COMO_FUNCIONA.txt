@@ -1,0 +1,23 @@
+GUIA DE UTILIZADOR - ORGANIZAÇÃO
+
+1. VER RELATÓRIO DE VENDAS
+
+Passo 1: Aceder à plataforma NeonDB no navegador de internet.
+
+Passo 2: Clicar em "SQL Editor" no menu lateral esquerdo.
+
+Passo 3: Escrever o comando SELECT * FROM nome_da_tua_view; (substitui pelo nome exato da view que criaste) na área de texto.
+
+Passo 4: Clicar no botão Run no topo do ecrã para ver a tabela com os dados atualizados.
+
+2. RECUPERAÇÃO DE DADOS (Disaster Recovery)
+
+Passo 1: Abrir a pasta principal do projeto no computador.
+
+Passo 2: Executar (clicar duas vezes) o ficheiro recuperar_tudo.sh na linha de comandos para iniciar automaticamente o restauro seguro do sistema.
+
+3. EM CASO DE ERRO
+
+Passo 1: Confirmar se o computador tem ligação à internet ativa.
+
+Passo 2: Se o erro persistir, não tentar alterar os ficheiros. Tirar uma captura de ecrã do erro e enviar um email para o suporte técnico (coloca aqui o teu email).
