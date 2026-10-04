@@ -1,0 +1,8 @@
+PROTOCOLO DE COMUNICAÇÃO E GESTÃO DE INCIDÊNCIAS (SLA)
+
+Em caso de falha crítica ou indisponibilidade do sistema Cloud, a equipa técnica deve utilizar exclusivamente a seguinte matriz de comunicação para garantir transparência junto da Direção, evitando alarmismos e demonstrando controlo operacional:
+
+GUIÃO OFICIAL DE COMUNICAÇÃO (Para a Gestão/Direção):
+"Detetámos uma indisponibilidade temporária na ligação ao endpoint PostgreSQL na nuvem. O protocolo de recuperação já foi iniciado através do painel de controlo Neon (alternância de Branch / Restauro PITR). Prevemos o restabelecimento total em [inserir tempo estimado, ex: 5 a 10] minutos, sem perda de integridade dos dados registados."
+
+Após o restabelecimento, o incidente deve ser obrigatoriamente documentado na tabela 'tb_log_incidentes' com a causa raiz e a solução aplicada.
