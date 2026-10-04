@@ -1,0 +1,16 @@
+CALENDÁRIO OPERACIONAL DE GESTÃO CLOUD (Neon PostgreSQL)
+
+Este documento define a rotina preventiva para garantir o máximo tempo de atividade (uptime) e desempenho do sistema.
+
+1. SEGUNDA-FEIRA (09:00 - 09:10) — Diagnóstico de Arranque
+- Validar se o Compute Endpoint no Neon Console está 'Active' sem erros.
+- Executar a consulta à vista 'pg_stat_activity' no SQL Editor para verificar conexões ativas e descartar bloqueios pendentes.
+
+2. SEXTA-FEIRA (17:00 - 17:15) — Auditoria de Salvaguarda
+- Confirmar no Neon Console a geração bem-sucedida dos snapshots automáticos semanais.
+- Executar exportação lógica externa (pg_dump) para repositório redundante.
+- Reportar à Direção o estado de disponibilidade do serviço.
+
+3. 1ª SEGUNDA-FEIRA DO MÊS — Manutenção Preventiva
+- Executar o comando 'VACUUM ANALYZE;' para limpar registos obsoletos (dead tuples) e otimizar pesquisas.
+- Monitorizar a quota de disco consumida no painel da consola.
