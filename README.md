@@ -19,3 +19,9 @@ Para garantir a salvaguarda dos dados, foi implementado um mecanismo de recupera
 Novidades da Versão 1.0 (Dashboard e Segurança)
 - Dashboard de Vendas: Criámos VIEWS que permitem ao Diretor ver o resumo de vendas atualizado num clique, sem necessidade de cálculos manuais.
 - Ética e Privacidade: Implementámos uma VIEW de dados anonimizados para garantir que os dados sensíveis dos clientes estão protegidos de acessos indevidos.
+
+## Conclusão do Projeto (UFCD 10797)
+
+Este repositório reflete a consolidação da infraestrutura de base de dados da Organização e marca a conclusão oficial do percurso prático do módulo UFCD 10797 (Gestão e Armazenamento de Dados). 
+
+O sistema encontra-se agora estável, documentado e preparado para operação autónoma através dos ficheiros de apoio ao utilizador e estratégia futura.
