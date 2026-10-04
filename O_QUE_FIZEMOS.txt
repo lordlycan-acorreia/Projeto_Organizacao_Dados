@@ -1,0 +1,6 @@
+REGISTO DE MELHORIAS - PROJETO DE DADOS 2026
+
+* Implementação de Base de Dados na Cloud (NeonDB): Transição de um sistema local vulnerável para a Cloud, garantindo acesso remoto seguro e proteção total contra falhas de hardware físico.
+* Automatização de Relatórios de Vendas (VIEWS): Criação de consultas automáticas que calculam a faturação instantaneamente. (Poupança estimada: 2 a 3 horas/semana que antes eram gastas em cálculos manuais).
+* Script de Contingência e Disaster Recovery: Criação do ficheiro automatizado 'recuperar_tudo.sh', garantindo que a infraestrutura da empresa pode ser restaurada em menos de 5 minutos em caso de ataque ou falha crítica.
+* Proteção e Anonimização de Dados: Implementação de VIEWS de segurança que ocultam informações sensíveis dos clientes, colocando a empresa em conformidade com as regras de proteção de dados.
