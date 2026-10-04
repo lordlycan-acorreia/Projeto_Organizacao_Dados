@@ -15,3 +15,7 @@ Não existem passwords gravadas neste repositório. Em caso de falha de dados, u
 Para garantir a salvaguarda dos dados, foi implementado um mecanismo de recuperação:
 - O ficheiro `recuperar_tudo.sh` contém os comandos de `pg_dump` para exportar a base de dados e o comando `psql` para injetar o backup de volta.
 - Sendo a base de dados alojada na Cloud (NeonDB), cumprimos o requisito de ter a cópia fora do local físico para prevenir desastres locais.
+
+Novidades da Versão 1.0 (Dashboard e Segurança)
+- Dashboard de Vendas: Criámos VIEWS que permitem ao Diretor ver o resumo de vendas atualizado num clique, sem necessidade de cálculos manuais.
+- Ética e Privacidade: Implementámos uma VIEW de dados anonimizados para garantir que os dados sensíveis dos clientes estão protegidos de acessos indevidos.
