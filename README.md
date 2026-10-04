@@ -25,3 +25,7 @@ Novidades da Versão 1.0 (Dashboard e Segurança)
 Este repositório reflete a consolidação da infraestrutura de base de dados da Organização e marca a conclusão oficial do percurso prático do módulo UFCD 10797 (Gestão e Armazenamento de Dados). 
 
 O sistema encontra-se agora estável, documentado e preparado para operação autónoma através dos ficheiros de apoio ao utilizador e estratégia futura.
+
+## Continuidade e Gestão de Incidentes (SLA)
+
+O sistema conta agora com uma infraestrutura de continuidade cloud. Foram implementadas rotinas estritas de monitorização (via `pg_stat_activity`), manutenção preventiva periódica e um registo centralizado de incidentes (`tb_log_incidentes`). Existe também um protocolo de comunicação transparente para atuar em tempo útil em caso de indisponibilidade de serviço, garantindo a rápida recuperação da infraestrutura.
