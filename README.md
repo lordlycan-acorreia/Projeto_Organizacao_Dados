@@ -29,3 +29,11 @@ O sistema encontra-se agora estável, documentado e preparado para operação au
 ## Continuidade e Gestão de Incidentes (SLA)
 
 O sistema conta agora com uma infraestrutura de continuidade cloud. Foram implementadas rotinas estritas de monitorização (via `pg_stat_activity`), manutenção preventiva periódica e um registo centralizado de incidentes (`tb_log_incidentes`). Existe também um protocolo de comunicação transparente para atuar em tempo útil em caso de indisponibilidade de serviço, garantindo a rápida recuperação da infraestrutura.
+
+## Encerramento Global e Transição Cloud (Hora 50)
+
+A infraestrutura de dados da Organização encontra-se totalmente consolidada na nuvem (Neon PostgreSQL). A passagem de testemunho foi concluída assegurando três pilares de resiliência:
+
+* **Autonomia Operacional ("Teste de Férias"):** O sistema não depende de um único técnico. Qualquer colaborador autorizado acede à vista `v_handoff_sistema` no Neon SQL Editor para consultar os manuais e rotinas diárias.
+* **Segurança e Gestão de Acessos (RBAC):** Os perfis possuem permissões estritas para a sua função (ex: apenas `SELECT`), permitindo ligações externas via SSL para Power BI e Excel sem comprometer as credenciais de administração.
+* **Proteção e Recuperação (PITR):** Através do recurso de Branches e Point-in-Time Recovery no Neon Console, a organização consegue reverter toda a base de dados para qualquer minuto específico em caso de desastre informático.
