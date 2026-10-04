@@ -1,0 +1,5 @@
+PRÓXIMOS PASSOS - ROADMAP TECNOLÓGICO (O que vamos automatizar a seguir)
+
+1. Portal de Gestão de Stock Direto: Criar uma interface para que os próprios fornecedores consigam atualizar as quantidades de stock no nosso sistema em tempo real, eliminando o erro humano na introdução manual.
+2. Comunicação Automática com Clientes: Migrar a atual base de dados de clientes para um sistema que permita acionar o envio automático de e-mails (campanhas, confirmações de faturação e avisos).
+3. Visualização Avançada (Business Intelligence): Conectar a nossa base de dados atual a uma ferramenta de visualização gráfica avançada (como o Power BI) para que o Diretor tenha acesso a um painel visual e dinâmico no telemóvel ou no computador.
